@@ -202,7 +202,7 @@ export default function AppjamRosterPage(props) {
     const [isLoading, setIsLoading] = useState(false);
 
     const sortRoster = () => {
-        return fetch('https://apurva29.pythonanywhere.com/sort', {
+        return fetch('/sort', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

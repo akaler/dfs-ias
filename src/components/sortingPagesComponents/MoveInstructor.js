@@ -22,7 +22,7 @@ export default function MoveInstructor({instructor, onMove, schools, program}) {
         console.log("MOVED from MOVEINSTRUCTOR.js")
         console.log("MOVE TO", instructor, school, program)
         if (school !== ""){
-            fetch('https://apurva29.pythonanywhere.com/moveinstructor', {
+            fetch('/moveinstructor', {
                 method: 'POST', // or 'PUT'
                 headers: {
                     'Content-Type': 'application/json',

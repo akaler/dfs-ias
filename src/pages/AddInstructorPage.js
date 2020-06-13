@@ -112,7 +112,7 @@ class ManualRosterPage extends Component {
 
         console.log(JSON.stringify(instructor));
 
-        fetch('https://apurva29.pythonanywhere.com/uploadinstructors', {
+        fetch('/uploadinstructors', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -36,7 +36,7 @@ class AppjamUploadRosterPage extends Component {
 
                 userList.push(firstUser);
 
-                fetch('https://apurva29.pythonanywhere.com/uploadinstructors', {
+                fetch('/uploadinstructors', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ class AppjamUploadRosterPage extends Component {
                                     "Program": ["AppJam+"], "New": false};
                     userList.push(newUser);
 
-                    fetch('http://apurva29.pythonanywhere.com/uploadinstructors', {
+                    fetch('/uploadinstructors', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

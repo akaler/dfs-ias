@@ -199,7 +199,7 @@ export default function SpheroSortedRosterPage() {
     // console.log(schools)
 
     const resortRoster = () => {
-        return fetch('https://apurva29.pythonanywhere.com/resort', {
+        return fetch('/resort', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

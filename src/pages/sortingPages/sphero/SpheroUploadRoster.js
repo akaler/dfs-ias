@@ -36,7 +36,7 @@ class SpheroUploadRosterPage extends Component {
 
                 userList.push(firstUser);
 
-                fetch('http://apurva29.pythonanywhere.com/uploadinstructors', {
+                fetch('/uploadinstructors', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ class SpheroUploadRosterPage extends Component {
                                     "Program": ["SpheroElementary"], "New": false};
                     userList.push(newUser);
 
-                    fetch('https://apurva29.pythonanywhere.com/uploadinstructors', {
+                    fetch('/uploadinstructors', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
