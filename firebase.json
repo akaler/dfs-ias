@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "ias-dreamsforschools",
+    "site": "ias-dfs-local",
     "public": "build",
     "ignore": [
       "firebase.json",
