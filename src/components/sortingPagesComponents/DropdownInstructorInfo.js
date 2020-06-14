@@ -75,6 +75,10 @@ export default function DropdownInstructorInfo({program, person, mentorsFromProp
                 body: JSON.stringify({"Program":program, "TeacherName": person.name, "SchoolName":person.schoolName}),
             })
             .then(response => response.json())
+            // .then(() => {
+            //     setIsLocked(!isLocked);
+            //     // window.location.reload()
+            // })
         }else{
             console.log("LOCK",program, person.name, person.schoolName)
             fetch('/lockinstructor', {
@@ -86,9 +90,13 @@ export default function DropdownInstructorInfo({program, person, mentorsFromProp
                 body: JSON.stringify({"Program":program, "TeacherName": person.name, "SchoolName":person.schoolName}),
             })
             .then(response => response.json())
+            // .then(() => {
+            //     setIsLocked(!isLocked);
+            //     // window.location.reload()
+            // })
         }
         setIsLocked(!isLocked);
-        window.location.reload(); 
+        // window.location.reload(); 
     }
 
     //function that triggers when pending button is clicked
@@ -101,8 +109,11 @@ export default function DropdownInstructorInfo({program, person, mentorsFromProp
             },
             body: JSON.stringify({"Program":program, "TeacherName": person.name, "SchoolName":person.schoolName}),
         })
-        .then(response => response.json())
-        window.location.reload();
+        .then(response => {response.json()})
+        // .then(() => {
+        //     window.location.reload()
+        // })
+        // window.location.reload();
     }
 
     return (
